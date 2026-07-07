@@ -1,0 +1,57 @@
+[
+    {
+        "type":"log",
+        "time":"07:00",
+        "status":"Aman",
+        "ph":7.2,
+        "temperature":29,
+        "valve":"OFF",
+        "roof":"OFF"
+    },
+
+    {
+        "type":"log",
+        "time":"08:00",
+        "status":"Warning",
+        "ph":6.3,
+        "temperature":30,
+        "valve":"ON",
+        "roof":"OFF"
+    },
+
+    {
+        "type":"event",
+        "time":"08:05",
+        "level":"warning",
+        "title":"⚠ pH Terlalu Rendah",
+        "message":"Katup Otomatis aktif untuk melakukan pergantian sebagian air."
+    },
+
+    {
+        "type":"log",
+        "time":"08:30",
+        "status":"Aman",
+        "ph":7.0,
+        "temperature":28,
+        "valve":"OFF",
+        "roof":"OFF"
+    },
+
+    {
+        "type":"event",
+        "time":"09:10",
+        "level":"critical",
+        "title":"⚠ Suhu Terlalu Tinggi",
+        "message":"Auto Roof terbuka otomatis karena suhu mencapai 32°C."
+    },
+
+    {
+        "type":"log",
+        "time":"09:20",
+        "status":"Warning",
+        "ph":7.1,
+        "temperature":32,
+        "valve":"OFF",
+        "roof":"ON"
+    }
+]

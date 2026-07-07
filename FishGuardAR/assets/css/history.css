@@ -1,0 +1,226 @@
+/* HEADER */
+
+.page-header{
+    margin-bottom:25px;
+}
+
+/* HISTORY CARD */
+
+.history-card{
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:22px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+}
+
+.history-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:15px;
+}
+
+.history-time{
+    font-size:18px;
+    font-weight:600;
+}
+
+.history-status{
+    padding:8px 16px;
+
+    border-radius:20px;
+
+    font-size:12px;
+    font-weight:600;
+}
+
+.safe{
+    background:#22C55E;
+}
+
+.warning{
+    background:#F59E0B;
+}
+
+.critical{
+    background:#EF4444;
+}
+
+.sensor-history{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.sensor-box{
+    background:rgba(255,255,255,0.08);
+
+    padding:14px;
+    border-radius:16px;
+}
+
+.sensor-box h4{
+    font-size:14px;
+    margin-bottom:8px;
+}
+
+.sensor-box p{
+    font-size:18px;
+    font-weight:600;
+}
+
+/* BOTTOM NAVIGATION */
+
+.bottom-nav{
+    position:fixed;
+    bottom:20px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:90%;
+    max-width:430px;
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:30px;
+
+    padding:14px 10px;
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+    z-index:999;
+}
+
+.nav-item{
+    text-decoration:none;
+    color:#CBD5E1;
+
+    font-size:14px;
+    font-weight:500;
+
+    transition:0.3s;
+}
+
+.nav-item:hover{
+    color:white;
+}
+
+.nav-item.active{
+    background:white;
+    color:#0F172A;
+
+    padding:10px 18px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+/* SUMMARY */
+
+.summary-card{
+
+    background:
+    rgba(255,255,255,0.12);
+
+    backdrop-filter:
+    blur(12px);
+
+    border-radius:22px;
+
+    padding:18px;
+
+    margin-bottom:25px;
+
+    text-align:center;
+}
+
+/* TIMELINE EVENT */
+
+.event-card{
+
+    background:
+    rgba(255,255,255,0.12);
+
+    backdrop-filter:
+    blur(12px);
+
+    border-radius:22px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    border-left:5px solid #F59E0B;
+}
+
+.event-card.normal{
+
+    border-left:
+    5px solid #22C55E;
+}
+
+.event-card.warning{
+
+    border-left:
+    5px solid #F59E0B;
+}
+
+.event-card.critical{
+
+    border-left:
+    5px solid #EF4444;
+}
+
+.event-time{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+}
+
+.event-title{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+}
+
+.event-message{
+
+    opacity:.85;
+}
+
+/* HOVER */
+
+.history-card,
+.event-card{
+
+    transition:.3s;
+}
+
+.history-card:hover,
+.event-card:hover{
+
+    transform:
+    translateY(-3px);
+
+    box-shadow:
+    0 10px 20px
+    rgba(0,0,0,.15);
+}

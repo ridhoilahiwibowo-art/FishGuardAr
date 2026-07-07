@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Control</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/control.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="page-header">
+        <h1>Smart Control</h1>
+        <p>Pengaturan aktuator Fish Guard AR</p>
+    </div>
+
+    <!-- AUTOMATIC VALVE -->
+
+<div class="control-card">
+
+    <div>
+
+        <h3>Katup Otomatis</h3>
+
+        <p>
+
+    Solenoid Valve
+
+</p>
+
+<p class="device-status">
+
+    Status :
+    <span id="valveStatus">
+
+        OFF
+
+    </span>
+
+</p>
+
+        <div class="mode-selector">
+
+            <label>
+
+                <input
+                type="radio"
+                name="valveMode"
+                id="valveAuto"
+                checked>
+
+                Otomatis
+
+            </label>
+
+            <label>
+
+                <input
+                type="radio"
+                name="valveMode"
+                id="valveManual">
+
+                Manual
+
+            </label>
+
+        </div>
+
+    </div>
+
+    <label class="switch">
+
+        <input
+        id="valveSwitch"
+        type="checkbox"
+        disabled>
+
+        <span class="slider"></span>
+
+    </label>
+
+</div>
+
+    <!-- AUTO ROOF -->
+
+<div class="control-card">
+
+    <div>
+
+        <h3>Auto Roof</h3>
+
+        <p>
+
+    Atap Otomatis
+
+</p>
+
+<p class="device-status">
+
+    Status :
+    <span id="roofStatus">
+
+        OFF
+
+    </span>
+
+</p>
+
+        <div class="mode-selector">
+
+            <label>
+
+                <input
+                type="radio"
+                name="roofMode"
+                id="roofAuto"
+                checked>
+
+                Otomatis
+
+            </label>
+
+            <label>
+
+                <input
+                type="radio"
+                name="roofMode"
+                id="roofManual">
+
+                Manual
+
+            </label>
+
+        </div>
+
+    </div>
+
+    <label class="switch">
+
+        <input
+        id="roofSwitch"
+        type="checkbox"
+        disabled>
+
+        <span class="slider"></span>
+
+    </label>
+
+</div>
+
+<!-- AUTO FEEDER -->
+
+<div class="control-card">
+
+    <div>
+
+        <h3>Auto Feeder</h3>
+
+        <p>
+
+            Jadwal :
+            07:00 • 12:00 • 17:00 WIB
+
+        </p>
+
+    </div>
+
+    <span class="status-label">
+
+        Otomatis
+
+    </span>
+
+</div>
+
+<!-- NAVBAR -->
+
+<nav class="bottom-nav">
+
+    <a href="index.html" class="nav-item">
+        Home
+    </a>
+
+    <a href="control.html" class="nav-item active">
+        Control
+    </a>
+
+    <a href="history.html" class="nav-item">
+        History
+    </a>
+
+    <a href="settings.html" class="nav-item">
+        Settings
+    </a>
+
+</nav>
+
+<script
+type="module"
+src="assets/js/control.js">
+</script>
+
+<script src=
+"assets/js/theme.js">
+</script>
+
+<script src="assets/js/auth.js"></script>
+
+<script>
+
+checkLogin();
+
+</script>
+
+</body>
+</html>

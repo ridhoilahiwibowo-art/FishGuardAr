@@ -1,0 +1,302 @@
+/* ======================================
+   RESET
+====================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ======================================
+   BODY
+====================================== */
+
+body{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+    135deg,
+    #08254A 0%,
+    #146C94 55%,
+    #1FA971 100%
+);
+
+}
+
+/* ======================================
+   CONTAINER
+====================================== */
+
+.login-container{
+    padding-top:130px;
+}
+
+/* ======================================
+   LOGO
+====================================== */
+
+.logo{
+    width:200px;
+    height:auto;
+    display:block;
+    margin:0 auto 20px;
+
+    filter:drop-shadow(
+        0 0 15px rgba(31,169,113,.35)
+    );
+}
+
+/* ======================================
+   LOGIN CARD
+====================================== */
+
+.login-card{
+
+    background:rgba(255,255,255,.97);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:left;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.20);
+
+}
+
+/* ======================================
+   LOGIN TITLE
+====================================== */
+
+.login-card h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:#0B2D5C;
+
+    letter-spacing:.5px;
+
+}
+
+/* ======================================
+   LABEL
+====================================== */
+
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+}
+
+/* ======================================
+   INPUT
+====================================== */
+
+input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    margin-bottom:18px;
+
+    outline:none;
+
+    transition:.3s;
+
+    background:#F8FAFC;
+
+}
+
+input:focus{
+
+    border-color:#1FA971;
+
+    box-shadow:
+    0 0 0 4px
+    rgba(31,169,113,.15);
+
+}
+
+/* ======================================
+   PASSWORD
+====================================== */
+
+.password-box{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.password-box input{
+
+    margin-bottom:0;
+
+}
+
+.password-box button{
+
+    width:55px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:#e8e8e8;
+
+    transition:.3s;
+
+}
+
+.password-box button:hover{
+
+    background:#1FA971;
+
+    color:white;
+
+}
+
+/* ======================================
+   REMEMBER
+====================================== */
+
+.remember{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin:18px 0;
+
+}
+
+.remember input{
+
+    width:auto;
+
+    margin:0;
+
+}
+
+/* ======================================
+   LOGIN BUTTON
+====================================== */
+
+#loginButton{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+    135deg,
+    #1FA971,
+    #17885c
+);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+#loginButton:hover{
+
+    transform:translateY(-2px);
+
+    background:#17885c;
+
+    box-shadow:
+    0 10px 20px
+    rgba(31,169,113,.30);
+
+}
+
+/* ======================================
+   MESSAGE
+====================================== */
+
+#loginMessage{
+
+    text-align:center;
+
+    margin-top:18px;
+
+    color:red;
+
+    font-size:14px;
+
+}
+
+/* ======================================
+   VERSION
+====================================== */
+
+.version{
+
+    color:white;
+
+    margin-top:20px;
+
+    opacity:.8;
+
+}
+
+/* ======================================
+   ANIMATION
+====================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
